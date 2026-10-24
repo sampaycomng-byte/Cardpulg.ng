@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cardplug gift card trading platform. Estimate gift card values in Nigerian naira.">
+  <title>Cardplug | Gift Card Trading</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="#" class="logo"><span>C</span> Cardplug.</a>
+    <nav>
+      <a href="#rates">Rates</a>
+      <a href="#how">How It Works</a>
+      <a href="#trade" class="nav-button">Get Started</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">YOUR DIGITAL TRADING DESK</p>
+        <h1>Gift cards into <span>naira.</span><br>Made simpler.</h1>
+        <p class="description">
+          Check an estimated gift card value and prepare your trade enquiry
+          with Cardplug. Simple, clear and convenient.
+        </p>
+        <a href="#trade" class="button">Estimate My Card →</a>
+        <p class="small-note">Sample estimates only. Rates are not live.</p>
+      </div>
+
+      <div class="hero-card">
+        <p class="card-label">GIFT CARD ESTIMATOR</p>
+        <p class="muted">Illustrative card value</p>
+        <h2 id="heroEstimate">₦30,000.00</h2>
+        <div class="divider"></div>
+        <div class="detail">
+          <span>Gift card</span>
+          <strong id="heroBrand">Apple Gift Card</strong>
+        </div>
+        <div class="detail">
+          <span>Card value</span>
+          <strong id="heroUsd">$100.00</strong>
+        </div>
+        <div class="detail">
+          <span>Sample rate</span>
+          <strong id="heroRate">₦300/USD</strong>
+        </div>
+        <a href="#trade" class="text-link">Calculate your value →</a>
+      </div>
+    </section>
+
+    <section class="features">
+      <span>GIFT CARD ESTIMATES</span>
+      <span>NAIRA CONVERSION</span>
+      <span>SIMPLE PROCESS</span>
+      <span>USER-FOCUSED DESIGN</span>
+    </section>
+
+    <section class="section" id="trade">
+      <div class="section-heading">
+        <p class="eyebrow">01 / CALCULATOR</p>
+        <h2>Estimate your card value.</h2>
+        <p>Select a card and enter its value to calculate an illustrative estimate in naira.</p>
+      </div>
+
+      <div class="calculator">
+        <div class="form-panel">
+          <label for="cardType">Gift card brand</label>
+          <select id="cardType">
+            <option value="apple">Apple Gift Card</option>
+            <option value="amazon">Amazon</option>
+            <option value="steam">Steam</option>
+            <option value="google">Google Play</option>
+            <option value="razer">Razer Gold</option>
+            <option value="itunes">iTunes</option>
+          </select>
+
+          <label for="cardAmount">Card value (USD)</label>
+          <div class="amount-input">
+            <span>$</span>
+            <input id="cardAmount" type="number" min="1" max="10000" value="100">
+          </div>
+
+          <p class="small-note">The rates are examples for demonstration.</p>
+          <button class="button full-width" id="calculateButton" type="button">
+            Calculate Estimate →
+          </button>
+        </div>
+
+        <div class="result-panel">
+          <p class="result-label">YOUR ESTIMATED VALUE</p>
+          <h2 id="resultAmount">₦30,000.00</h2>
+          <div class="detail">
+            <span>Sample rate</span>
+            <strong id="resultRate">₦300 / USD</strong>
+          </div>
+          <div class="detail">
+            <span>Card value</span>
+            <strong id="resultUsd">$100.00 USD</strong>
+          </div>
+          <p class="disclaimer">
+            This is not a guaranteed offer. Actual rates may vary by card
+            type, region, condition and market conditions.
+          </p>
+          <button class="button button-light full-width" id="requestButton" type="button">
+            Prepare Trade Enquiry →
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rates-section" id="rates">
+      <div class="section-heading">
+        <p class="eyebrow">02 / SAMPLE RATE BOARD</p>
+        <h2>Popular gift cards.</h2>
+        <p>These are illustrative values, not verified live trading rates.</p>
+      </div>
+
+      <div class="rate-grid">
+        <article class="rate-item"><span class="rate-icon">A</span><div><strong>Apple Gift Card</strong><p>Sample rate</p></div><b>₦300/USD</b></article>
+        <article class="rate-item"><span class="rate-icon amazon">a</span><div><strong>Amazon</strong><p>Sample rate</p></div><b>₦285/USD</b></article>
+        <article class="rate-item"><span class="rate-icon steam">S</span><div><strong>Steam</strong><p>Sample rate</p></div><b>₦275/USD</b></article>
+        <article class="rate-item"><span class="rate-icon google">G</span><div><strong>Google Play</strong><p>Sample rate</p></div><b>₦265/USD</b></article>
+        <article class="rate-item"><span class="rate-icon razer">R</span><div><strong>Razer Gold</strong><p>Sample rate</p></div><b>₦270/USD</b></article>
+        <article class="rate-item"><span class="rate-icon itunes">i</span><div><strong>iTunes</strong><p>Sample rate</p></div><b>₦290/USD</b></article>
+      </div>
+    </section>
+
+    <section class="section how-section" id="how">
+      <div class="section-heading">
+        <p class="eyebrow">03 / HOW IT WORKS</p>
+        <h2>A clearer way to get started.</h2>
+      </div>
+
+      <div class="steps">
+        <article><span>01</span><h3>Select your card</h3><p>Choose the gift card brand and enter its face value.</p></article>
+        <article><span>02</span><h3>Confirm the rate</h3><p>Verify the current offer and terms with the trading operator.</p></article>
+        <article><span>03</span><h3>Review your trade</h3><p>Use a verified service with clear transaction and payout records.</p></article>
+      </div>
+    </section>
+
+    <section class="security">
+      <div>
+        <p class="eyebrow">TRADE WITH CARE</p>
+        <h2>Your security matters.</h2>
+        <p>This starter website does not process trades or payouts.
+          Never share a gift card code until you have verified the operator
+          and understood the terms.</p>
+      </div>
+      <a href="#trade" class="button button-light">Check an Estimate →</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#" class="logo"><span>C</span> Cardplug.</a>
+    <p>Gift card trading website starter.</p>
+    <p>© <span id="year"></span> Cardplug. All rights reserved.</p>
+    <p class="small-note">Sample estimates only. No live trading is enabled.</p>
+  </footer>
+
+  <div id="message" class="message" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
